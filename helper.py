@@ -13,7 +13,16 @@ def fooi_pp(bedrag, personen):
         bedrag_pp = "??"
     return f"Het bedrag per persoon is {bedrag_pp} euro"
 
-b = int(input("Welk bedrag zit er in de fooienpot? "))
-p = int(input("Over hoeveel mensen moet de pot verdeeld worden? ")) 
+def onderstreep(tekst=""):
+    uit = []
+    uit .append(tekst)
+    uit .append(len(tekst) * "-")
+    return uit
 
-print(fooi_pp(b,p))
+def som(dictionary):
+    totaal = 0
+
+    for waarde in dictionary.values():
+        totaal += waarde
+
+    return totaal
